@@ -11,12 +11,11 @@ before_script:
   - ./cc-test-reporter before-build
 
 after_script:
-  - ./cc-test-reporter after-build --exit-code $CC_TEST_REPORTER_ID
-
-before_deploy: echo "Before Deployment - This deploy was PUSHED by By - amartinez via Local"
-deploy:
-  skip_cleanup: true
-  on:
-    branch: main
-  provider: script
-  script: pipenv run pytest
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+# before_deploy: echo "Before Deployment - This deploy was PUSHED by By - amartinez via Local"
+# deploy:
+#   skip_cleanup: true
+#   on:
+#     branch: main
+#   provider: script
+#   script: pipenv run pytest
