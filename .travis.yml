@@ -1,10 +1,11 @@
 #Config file for automatic testing at travis-ci.org
 language: python
 python:
-  - 3.9
+  - 3.8.10
 
 install:
-  - pipenv install --dev --ignore-pipfile --deploy
+  # - pipenv install --dev --ignore-pipfile --deploy
+  -
 
 before_script: # code coverage tool
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -25,4 +26,5 @@ deploy:
   on:
     branch: main
   provider: script
-  script: pipenv run python /algoViewer/windows.py
+  # script: pipenv run python dummy.py
+  script: pipenv run pytest
