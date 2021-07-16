@@ -22,4 +22,4 @@ deploy:
   on:
     branch: main
   provider: script
-  script: pipenv run pytest
+  script: pytest
