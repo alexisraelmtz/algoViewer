@@ -1,8 +1,9 @@
-import pytest
-
-def inc(x):
-    return x + 2
+import dummy
 
 
 def test_answer():
-    assert inc(3) == 5
+    assert dummy.inc(3) == 5
+
+
+if __name__ == "__main__":
+    test_answer()
