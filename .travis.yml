@@ -2,7 +2,7 @@ language: python
 python:
   - 3.8
 
-install: # --ignore-pipfile --deploy
+install:
   - pipenv install --dev --ignore-pipfile --deploy
 
 before_script:
@@ -12,10 +12,6 @@ before_script:
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-# before_deploy: echo "Before Deployment - This deploy was PUSHED by By - amartinez via Local"
-# deploy:
-#   skip_cleanup: true
-#   on:
-#     branch: main
-#   provider: script
-#   script: pipenv run pytest
+
+script:
+  - pipenv run pytest --cov-report html --cov-report term
