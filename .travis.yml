@@ -10,15 +10,13 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 
-script:
-  - pytest
-
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-# before_deploy: echo "Before Deployment - This deploy was PUSHED by By - amartinez via Local"
-# deploy:
-#   skip_cleanup: true
-#   on:
-#     branch: main
-#   provider: script
-#   script: pipenv run pytest
+
+before_deploy: echo "Before Deployment - This deploy was PUSHED by By - amartinez via Local"
+deploy:
+  skip_cleanup: true
+  on:
+    branch: main
+  provider: script
+  script: pipenv run pytest
