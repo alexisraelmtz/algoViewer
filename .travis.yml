@@ -1,7 +1,7 @@
 #Config file for automatic testing at travis-ci.org
 language: python
 python:
-  - 3.8.10
+  - 3.8
 
 install:
   # - pipenv install --dev --ignore-pipfile --deploy
