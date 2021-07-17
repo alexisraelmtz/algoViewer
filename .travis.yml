@@ -13,7 +13,9 @@ before_script: # code coverage tool
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
-before_deploy: echo "Before Deployment - This deploy was PUSHED by By - amartinez via Local"
+before_deploy:
+  - echo "Before Deployment - This deploy was PUSHED by By - amartinez via Local"
+
 deploy:
   skip_cleanup: true
   on:
