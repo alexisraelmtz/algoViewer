@@ -6,7 +6,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/maintainability)](https://codeclimate.com/github/alexisraelmtz/algoViewer/maintainability)
 
-## [![Test Coverage](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/test_coverage)](https://codeclimate.com/github/alexisraelmtz/algoViewer/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/test_coverage)](https://codeclimate.com/github/alexisraelmtz/algoViewer/test_coverage)
 
 ## Introduction
 
