@@ -2,8 +2,12 @@ import pygame
 import math
 from queue import PriorityQueue
 import os
+# from pygame.locals import *
+# pygame.init()
+# pygame.init()
+# pygame.display.list_modes()
 
-os.environ["SDL_VIDEODRIVER"] = "dummy"
+# os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 
 WIDTH = 600
