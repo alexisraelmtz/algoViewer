@@ -22,7 +22,6 @@ graph = [
     [13, 17, 14],       # 16
     [16],               # 17
     [12, 11],           # 18
-    [19],               # 19
 ]
 size = len(graph)
 
@@ -40,11 +39,12 @@ def breadthForSearch(node):
         neighbours = graph[node]
         for next in neighbours:
             if not visited[next]:
+                print(
+                    f"Currently at Node {node}: {neighbours}. Visiting {next}")
                 q.append(next)
                 visited[next] = True
                 previous[next] = node
-                print(
-                    f"Currently at Node {node}: {neighbours}. Visiting {next}")
+
             elif visited[next]:
                 print(f"BackTracking Node: {node}")
     return previous
