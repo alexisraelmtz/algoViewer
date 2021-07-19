@@ -1,6 +1,6 @@
 # Welcome to An AlgoViewer -- by Alex Martinez
 
-## Recursive Search Propagation Viewer
+## Path Finding Algorithm Propagation Visualizer
 
 [![Build Status](https://travis-ci.com/alexisraelmtz/algoViewer.svg?branch=main)](https://travis-ci.com/alexisraelmtz/algoViewer)
 
