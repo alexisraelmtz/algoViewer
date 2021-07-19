@@ -1,12 +1,12 @@
 import pygame
 import math
 from queue import PriorityQueue
-import os
+import time
+# import os
 # from pygame.locals import *
 # pygame.init()
 # pygame.init()
 # pygame.display.list_modes()
-
 # os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 
@@ -35,7 +35,7 @@ class Node:
         self.color = WHITE
         self.neighbours = []
         self.width = width
-        self.netRow = netRows
+        self.netRows = netRows
 
     def getPosition(self):
         return self.row, self.col
@@ -56,7 +56,7 @@ class Node:
         return self.color == TURQUOISE
 
     def reset(self):
-        self.color == WHITE
+        self.color = WHITE
 
     #################################
 
@@ -82,17 +82,26 @@ class Node:
         pygame.draw.rect(window, self.color,
                          (self.x, self.y, self.width, self.width))
 
-    def updateNeighbours(self, grid):
-        pass
+    def updateNeighbours(self, graph):
+        self.neighbours = []
+        # DOWN
+        if self.row < self.netRows - 1 and not graph[self.row + 1][self.col].isWall():
+            self.neighbours.append(graph[self.row + 1][self.col])
+        # UP
+        if self.row < 0 and not graph[self.row - 1][self.col].isWall():
+            self.neighbours.append(graph[self.row - 1][self.col])
+        # RIGHT
+        if self.col < self.netRows - 1 and not graph[self.row][self.col + 1].isWall():
+            self.neighbours.append(graph[self.row][self.col + 1])
+        # LEFT
+        if self.col > 0 and not graph[self.row][self.col - 1].isWall():
+            self.neighbours.append(graph[self.row][self.col - 1])
 
     def __lt__(self, other):
         return False
 
 
-def h(p1, p2):
-    x1, y1 = p1
-    x2, y2 = p2
-    return abs(x1-x2) + abs(y1-y2)
+#################################
 
 
 def makeGraph(rows, width):
@@ -136,23 +145,125 @@ def getMousePosition(position, rows, width):
     return row, col
 
 
+def tracePath(cameFrom, current, draw):
+    while current in cameFrom:
+        current = cameFrom[current]
+        current.makePath()
+        draw()
+
+
+def h(p1, p2):
+    x1, y1 = p1
+    x2, y2 = p2
+    return abs(x1 - x2) + abs(y1 - y2)
+
+
+def aStarAlgo(draw, graph, start, end):
+    count = 0
+    openSet = PriorityQueue()
+    openSet.put((0, count, start))
+    cameFrom = {}
+    gScore = {node: float("inf") for row in graph for node in row}
+    gScore[start] = 0
+    fScore = {node: float("inf") for row in graph for node in row}
+    fScore[start] = h(start.getPosition(), end.getPosition())
+
+    openSetDict = {start}
+
+    while not openSet.empty():
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+
+        current = openSet.get()[2]
+        openSetDict.remove(current)
+
+        if current == end:
+            tracePath(cameFrom, end, draw)
+            end.makeEnd()
+            return True
+
+        for neighbour in current.neighbours:
+            gTempScore = gScore[current] + 1
+
+            if gTempScore < gScore[neighbour]:
+                cameFrom[neighbour] = current
+                gScore[neighbour] = gTempScore
+                fScore[neighbour] = gTempScore + \
+                    h(neighbour.getPosition(), end.getPosition())
+                if neighbour not in openSetDict:
+                    count += 1
+                    openSet.put((fScore[neighbour], count, neighbour))
+                    openSetDict.add(neighbour)
+                    neighbour.makeOpen()
+        # time.sleep(0.1)
+        draw()
+
+        if current != start:
+            current.makeClosed()
+
+    return False
+
+
 def main(window, width):
-    ROWS = 20
+    ROWS = 50
     graph = makeGraph(ROWS, width)
 
     start = None
     end = None
 
     run = True
-    started = False
 
     while run:
-        for event in pygame.get():
+        draw(window, graph, ROWS, width)
+        for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
 
             if started:
                 continue
 
+            if pygame.mouse.get_pressed()[0]:  # Left
+                position = pygame.mouse.get_pos()
+                row, col = getMousePosition(position, ROWS, width)
+                node = graph[row][col]
+                if not start and node != end:
+                    start = node
+                    start.makeStart()
 
-pygame.quit()
+                elif not end and node != start:
+                    end = node
+                    end.makeEnd()
+
+                elif node != end and node != start:
+                    node.makeWall()
+
+            elif pygame.mouse.get_pressed()[2]:  # Right
+                position = pygame.mouse.get_pos()
+                row, col = getMousePosition(position, ROWS, width)
+                node = graph[row][col]
+                node.reset()
+                if node == start:
+                    start = None
+                elif node == end:
+                    end = None
+
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE and start and end:
+                    # print("Space was Pressed Down.")
+                    for row in graph:
+                        for node in row:
+                            node.updateNeighbours(graph)
+                    aStarAlgo(lambda: draw(window, graph,
+                              ROWS, width), graph, start, end)
+
+                if event.key == pygame.K_c:
+                    start = None
+                    end = None
+                    graph = makeGraph(ROWS, width)
+
+    pygame.quit()
+
+
+if __name__ == "__main__":
+    main(GRAPH, WIDTH)
