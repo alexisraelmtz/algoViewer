@@ -4,8 +4,8 @@ Welcome to An AlgoViewer -- by Alex Martinez
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   /getting
-   /science
+   :ref:`getting`
+   :ref:`science`
 
 
 
