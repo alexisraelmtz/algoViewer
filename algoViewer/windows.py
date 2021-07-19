@@ -7,14 +7,14 @@ pygame.display.set_caption(
     "AlgoViewer -- Recursive Propagation Algorithms By Alex Israel -- @Enroute")
 
 
-ORANGE = (255, 255, 0)  # START
-TURQUOISE = (255, 85, 51)  # END
-RED = (51, 221, 255)  # PROPAGATION
-GREEN = (179, 255, 255)  # LAST/CURRENT
-WHITE = (255, 255, 255)  # OPEN
-BLACK = (0, 0, 0)  # CLOSED
-PURPLE = (255, 255, 153)  # PATH
-GREY = (230, 230, 230)  # LINES
+START = (255, 255, 0)  # START
+END = (255, 85, 51)  # END
+PROPAGATION = (51, 221, 255)  # PROPAGATION
+CURRENT = (179, 255, 255)  # LAST/CURRENT
+OPEN = (255, 255, 255)  # OPEN
+CLOSED = (0, 0, 0)  # CLOSED
+PATH = (255, 255, 153)  # PATH
+GRID = (230, 230, 230)  # LINES
 # BLUE = (0, 255, 0)  # unused
 # YELLOW = (255, 255, 0) # unused
 
@@ -25,7 +25,7 @@ class Node:
         self.col = col
         self.x = row * width
         self.y = col * width
-        self.color = WHITE
+        self.color = OPEN
         self.neighbours = []
         self.width = width
         self.netRows = netRows
@@ -34,42 +34,42 @@ class Node:
         return self.row, self.col
 
     def isClosed(self):
-        return self.color == RED
+        return self.color == PROPAGATION
 
     def isOpen(self):
-        return self.color == GREEN
+        return self.color == CURRENT
 
     def isWall(self):
-        return self.color == BLACK
+        return self.color == CLOSED
 
     def isStart(self):
-        return self.color == ORANGE
+        return self.color == START
 
     def isEnd(self):
-        return self.color == TURQUOISE
+        return self.color == END
 
     def reset(self):
-        self.color = WHITE
+        self.color = OPEN
 
     #################################
 
     def makeClosed(self):
-        self.color = RED
+        self.color = PROPAGATION
 
     def makeOpen(self):
-        self.color = GREEN
+        self.color = CURRENT
 
     def makeWall(self):
-        self.color = BLACK
+        self.color = CLOSED
 
     def makeStart(self):
-        self.color = ORANGE
+        self.color = START
 
     def makeEnd(self):
-        self.color = TURQUOISE
+        self.color = END
 
     def makePath(self):
-        self.color = PURPLE
+        self.color = PATH
 
     def draw(self, window):
         pygame.draw.rect(window, self.color,
@@ -112,13 +112,13 @@ def makeGraph(rows, width):
 def drawGraph(window, rows, width):
     size = width//rows
     for i in range(rows):
-        pygame.draw.line(window, GREY, (0, i*size), (width, i*size))
+        pygame.draw.line(window, GRID, (0, i*size), (width, i*size))
         for j in range(rows):
-            pygame.draw.line(window, GREY, (j*size, 0), (j*size, width))
+            pygame.draw.line(window, GRID, (j*size, 0), (j*size, width))
 
 
 def draw(window, graph, rows, width):
-    window.fill(WHITE)
+    window.fill(OPEN)
 
     for row in graph:
         for node in row:
