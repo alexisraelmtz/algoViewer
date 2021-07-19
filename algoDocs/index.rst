@@ -1,8 +1,12 @@
 Welcome to An AlgoViewer -- by Alex Martinez
 ============================================
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   /getting
+   /science
+
 
 
 Preface
@@ -19,27 +23,31 @@ Problem
 ____________________________________________
 --------------------------------------------
 
-I have been very visual throughout all my life, and writing down simple data structures with pen on paper has always helped me understand the subject better.  For this occasion, and after many dedicated hours into getting a basic understanding of Sorting and Path Finding algorithms, I think it is an excellent practice to create an API that traverses visually any generated graph structure. In addition to that, create a small Data Base of different types of Algorithms to choose from and learn about the inner workings visually.
+I have been very visual throughout all my life, and writing down simple data structures with pen on paper has always helped me understand the subject for the better.  For this occasion, and after many dedicated hours into getting a basic understanding of Sorting and Path Finding algorithms, I think it is an excellent practice to create an API that traverses visually any generated graph structure. In addition to that, create a small Data Base of different types of Algorithms to choose from and learn about the inner workings visually.
 
 
-
-Introduction
+Solution
 ____________________________________________
 --------------------------------------------
 
-The first step to understanding the science behind such API, is to take a step back and introduce the basic concepts and essentials of Graph Theory.
+The API is capable of traversing any path-finding algorithm through a graph-like data structure in a visual fashion, with the following -
 
-What Will Cover?
+Featured Algorithms:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   1. Graph definition
-   2. Nodes
-   3. Types of Graphs
-   4. Pathfinding Algorithms
+- DFS,
+- BFS,
+- A Star,
+- Cownway's Game Of Life
+
+Repository
+____________________________________________
+--------------------------------------------
+
+Feel Free to surf the Repo any time: `AlgoViewer - Official Repo
+<https://github.com/alexisraelmtz/algoViewer/>`_.
 
 
-
-
-Indices and tables
+Indices and Tables
 ____________________________________________
 --------------------------------------------
 
