@@ -1,13 +1,15 @@
 # Welcome to An AlgoViewer -- by Alex Martinez
 
 ## Path Finding Algorithm Propagation Visualizer
+Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer-path-finding-algorithm-propagation-visualizer.readthedocs.io/en/latest/)
 
+
+---
 [![Build Status](https://travis-ci.com/alexisraelmtz/algoViewer.svg?branch=main)](https://travis-ci.com/alexisraelmtz/algoViewer)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/maintainability)](https://codeclimate.com/github/alexisraelmtz/algoViewer/maintainability)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/test_coverage)](https://codeclimate.com/github/alexisraelmtz/algoViewer/test_coverage)
-
 ---
 
 
@@ -47,3 +49,5 @@ The first step to understanding the science behind such API, is to take a step b
 - A Star,
 - Cownway's Game Of Life
 
+---
+Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer-path-finding-algorithm-propagation-visualizer.readthedocs.io/en/latest/)
