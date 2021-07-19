@@ -4,20 +4,23 @@ from queue import PriorityQueue
 import time
 
 
-WIDTH = 800
+WIDTH = 600
 GRAPH = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("AlgoViewer -- Recursive Propagation Algorithms")
 
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 255, 0)
+
+RED = (51, 221, 255)  # PROPAGATION
+GREEN = (51, 255, 221)  # LAST/CURRENT
+
+BLUE = (0, 255, 0)  # unused
 YELLOW = (255, 255, 0)
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-PURPLE = (128, 0, 128)
-ORANGE = (255, 165, 0)
-GREY = (128, 128, 128)
-TURQUOISE = (64, 224, 208)
+WHITE = (255, 255, 255)  # OPEN
+BLACK = (0, 0, 0)  # WALLS
+PURPLE = (255, 255, 153)  # PATH
+ORANGE = (255, 255, 0)  # START
+GREY = (230, 230, 230)  # LINES
+
+TURQUOISE = (255, 85, 51)  # END
 
 
 class Node:
@@ -200,7 +203,7 @@ def getMousePosition(position, rows, width):
 
 
 def main(window, width):
-    ROWS = 50
+    ROWS = 20
     graph = makeGraph(ROWS, width)
 
     start = None
@@ -246,7 +249,7 @@ def main(window, width):
                         for node in row:
                             node.updateNeighbours(graph)
                     aStarAlgo(lambda: draw(window, graph,
-                              ROWS, width), graph, start, end)
+                                           ROWS, width), graph, start, end)
 
                 if event.key == pygame.K_c:
                     start = None
