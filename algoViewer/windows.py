@@ -82,7 +82,7 @@ class Node:
         if self.row < self.netRows - 1 and not graph[self.row + 1][self.col].isWall():
             self.neighbours.append(graph[self.row + 1][self.col])
         # UP
-        if self.row < 0 and not graph[self.row - 1][self.col].isWall():
+        if self.row > 0 and not graph[self.row - 1][self.col].isWall():
             self.neighbours.append(graph[self.row - 1][self.col])
         # RIGHT
         if self.col < self.netRows - 1 and not graph[self.row][self.col + 1].isWall():
