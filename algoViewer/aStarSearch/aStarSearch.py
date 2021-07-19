@@ -1,5 +1,6 @@
 from queue import PriorityQueue
 import math
+import pygame
 
 
 def h(p1, p2):

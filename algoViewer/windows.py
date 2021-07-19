@@ -1,9 +1,5 @@
 import pygame
-import math
-from queue import PriorityQueue
-import time
 from aStarSearch import aStarSearch as first
-
 
 WIDTH = 600
 GRAPH = pygame.display.set_mode((WIDTH, WIDTH))
@@ -189,8 +185,8 @@ def main(window, width):
                     for row in graph:
                         for node in row:
                             node.updateNeighbours(graph)
-                    first.aStarSearch(lambda: draw(window, graph,
-                                                   ROWS, width), graph, start, end)
+                    first.aStarSearch(lambda: draw(
+                        window, graph, ROWS, width), graph, start, end)
 
                 if event.key == pygame.K_c:
                     start = None
