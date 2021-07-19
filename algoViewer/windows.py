@@ -2,21 +2,15 @@ import pygame
 import math
 from queue import PriorityQueue
 import time
-# import os
-# from pygame.locals import *
-# pygame.init()
-# pygame.init()
-# pygame.display.list_modes()
-# os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 
-WIDTH = 600
+WIDTH = 800
 GRAPH = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("AlgoViewer -- Recursive Propagation Algorithms")
 
-RED = (255, 0, 0)  # Visited
+RED = (255, 0, 0)
 GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
+BLUE = (0, 255, 0)
 YELLOW = (255, 255, 0)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -27,7 +21,7 @@ TURQUOISE = (64, 224, 208)
 
 
 class Node:
-    def __init__(self, row, col, width, netRows) -> None:
+    def __init__(self, row, col, width, netRows):
         self.row = row
         self.col = col
         self.x = row * width
@@ -104,45 +98,10 @@ class Node:
 #################################
 
 
-def makeGraph(rows, width):
-    graph = []
-    size = width // rows
-    for i in range(rows):
-        graph.append([])
-        for j in range(rows):
-            node = Node(i, j, size, rows)
-            graph[i].append(node)
-
-    return graph
-
-
-def drawGraph(window, rows, width):
-    size = width//rows
-    for i in range(rows):
-        pygame.draw.line(window, GREY, (0, i*size), (width, i*size))
-        for j in range(rows):
-            pygame.draw.line(window, GREY, (j*size, 0), (j*size, width))
-
-
-def draw(window, graph, rows, width):
-    window.fill(WHITE)
-
-    for row in graph:
-        for node in row:
-            node.draw(window)
-
-    drawGraph(window, rows, width)
-    pygame.display.update()
-
-
-def getMousePosition(position, rows, width):
-    size = width//rows
-    y, x = position
-
-    row = y//size
-    col = x//size
-
-    return row, col
+def h(p1, p2):
+    x1, y1 = p1
+    x2, y2 = p2
+    return abs(x1 - x2) + abs(y1 - y2)
 
 
 def tracePath(cameFrom, current, draw):
@@ -150,12 +109,6 @@ def tracePath(cameFrom, current, draw):
         current = cameFrom[current]
         current.makePath()
         draw()
-
-
-def h(p1, p2):
-    x1, y1 = p1
-    x2, y2 = p2
-    return abs(x1 - x2) + abs(y1 - y2)
 
 
 def aStarAlgo(draw, graph, start, end):
@@ -205,6 +158,47 @@ def aStarAlgo(draw, graph, start, end):
     return False
 
 
+def makeGraph(rows, width):
+    graph = []
+    size = width // rows
+    for i in range(rows):
+        graph.append([])
+        for j in range(rows):
+            node = Node(i, j, size, rows)
+            graph[i].append(node)
+
+    return graph
+
+
+def drawGraph(window, rows, width):
+    size = width//rows
+    for i in range(rows):
+        pygame.draw.line(window, GREY, (0, i*size), (width, i*size))
+        for j in range(rows):
+            pygame.draw.line(window, GREY, (j*size, 0), (j*size, width))
+
+
+def draw(window, graph, rows, width):
+    window.fill(WHITE)
+
+    for row in graph:
+        for node in row:
+            node.draw(window)
+
+    drawGraph(window, rows, width)
+    pygame.display.update()
+
+
+def getMousePosition(position, rows, width):
+    size = width//rows
+    y, x = position
+
+    row = y//size
+    col = x//size
+
+    return row, col
+
+
 def main(window, width):
     ROWS = 50
     graph = makeGraph(ROWS, width)
@@ -219,9 +213,6 @@ def main(window, width):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-
-            if started:
-                continue
 
             if pygame.mouse.get_pressed()[0]:  # Left
                 position = pygame.mouse.get_pos()
