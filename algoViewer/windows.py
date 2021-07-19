@@ -1,23 +1,21 @@
 import pygame
 from aStarSearch import aStarSearch as first
 
-WIDTH = 600
+WIDTH = 700
 GRAPH = pygame.display.set_mode((WIDTH, WIDTH))
-pygame.display.set_caption("AlgoViewer -- Recursive Propagation Algorithms")
+pygame.display.set_caption("AlgoViewer -- Recursive Propagation Algorithms By Alex Israel -- @Enroute")
 
 
+ORANGE = (255, 255, 0)  # START
+TURQUOISE = (255, 85, 51)  # END
 RED = (51, 221, 255)  # PROPAGATION
 GREEN = (51, 255, 221)  # LAST/CURRENT
-
-BLUE = (0, 255, 0)  # unused
-YELLOW = (255, 255, 0)
 WHITE = (255, 255, 255)  # OPEN
-BLACK = (0, 0, 0)  # WALLS
+BLACK = (0, 0, 0)  #    CLOSED
 PURPLE = (255, 255, 153)  # PATH
-ORANGE = (255, 255, 0)  # START
 GREY = (230, 230, 230)  # LINES
-
-TURQUOISE = (255, 85, 51)  # END
+# BLUE = (0, 255, 0)  # unused
+# YELLOW = (255, 255, 0) # unused
 
 
 class Node:
@@ -140,7 +138,7 @@ def getMousePosition(position, rows, width):
 
 
 def main(window, width):
-    ROWS = 20
+    ROWS = 50
     graph = makeGraph(ROWS, width)
 
     start = None
