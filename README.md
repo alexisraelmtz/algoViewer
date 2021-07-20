@@ -72,7 +72,7 @@ Run the following command:
 
 - Right Click:
   - Adds a single Node.
-  - First 2 Nodes Default to Starting and Target Node, with Yellow and Orange colors correspondingly.
+  - First 2 Nodes Default to START and TARGET node; Yellow and Orange colors correspondingly.
   - After 2 right clicks, it defaults to Wall Nodes.
 - Left Click:
   - Removes the selected Node which ever type it corresponds.
