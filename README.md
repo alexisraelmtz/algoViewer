@@ -1,18 +1,12 @@
 # An AlgoViewer -- by Alex Martinez
 
 ## Path Finding Algorithm Propagation Visualizer
+[![Build Status](https://travis-ci.com/alexisraelmtz/algoViewer.svg?branch=main)](https://travis-ci.com/alexisraelmtz/algoViewer) [![Maintainability](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/maintainability)](https://codeclimate.com/github/alexisraelmtz/algoViewer/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/test_coverage)](https://codeclimate.com/github/alexisraelmtz/algoViewer/test_coverage)
 
 Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
 
 ---
-
-[![Build Status](https://travis-ci.com/alexisraelmtz/algoViewer.svg?branch=main)](https://travis-ci.com/alexisraelmtz/algoViewer)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/maintainability)](https://codeclimate.com/github/alexisraelmtz/algoViewer/maintainability)
-
-## [![Test Coverage](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/test_coverage)](https://codeclimate.com/github/alexisraelmtz/algoViewer/test_coverage)
-
-#### My Shortvideo
+<img src="/algoDocs/resources/THREE.gif" alt="The good Old Classic Percolation Question -" width="600"/> 
 
 ## Preface
 
