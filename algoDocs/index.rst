@@ -4,10 +4,11 @@ Welcome to AlgoViewer
 by -- Alex Israel Martínez
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-   getting
    science
+   getting
+   
    
 
 
