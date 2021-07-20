@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Quick Start Guide &mdash; An AlgoViewer  documentation</title>
+  <title>Quick Start Guide &mdash; AlgoViewer  documentation</title>
   
 
   
@@ -42,7 +42,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Graph Theory" href="science.html" />
-    <link rel="prev" title="Welcome to An AlgoViewer" href="index.html" /> 
+    <link rel="prev" title="Welcome to AlgoViewer" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -56,7 +56,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> An AlgoViewer
+            <a href="index.html" class="icon icon-home"> AlgoViewer
           
 
           
@@ -90,9 +90,15 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#on-mouse">On mouse:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#on-press-keyboard">On Press Keyboard:</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#repository">Repository</a></li>
 <li class="toctree-l1"><a class="reference internal" href="science.html">Graph Theory</a></li>
 </ul>
 
@@ -109,7 +115,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">An AlgoViewer</a>
+          <a href="index.html">AlgoViewer</a>
         
       </nav>
 
@@ -163,18 +169,77 @@
             
   <div class="section" id="quick-start-guide">
 <span id="started"></span><h1>Quick Start Guide<a class="headerlink" href="#quick-start-guide" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/THREE.gif"><img alt="The Good Old Classic Percolation Question" src="_images/THREE.gif" style="width: 390.0px; height: 390.0px;" /></a>
+</div>
+<p>It is required that you have in system the following:</p>
+<ul class="simple">
+<li><p><cite>python</cite> or <cite>python3</cite>.</p></li>
+<li><p><cite>pip</cite> or <cite>pip3</cite>.</p></li>
+</ul>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>The first step to understanding the science behind such API, is to take a step back and introduce the basic concepts and essentials of Graph Theory.</p>
+<p>Set Up repo and installs first. e.g. Unix like systems:</p>
+<ul>
+<li><p>$ <cite>git clone https://github.com/alexisraelmtz/algoViewer.git</cite></p></li>
+<li><p>Within any venv install <cite>pipenv</cite> if not present:</p>
+<blockquote>
+<div><p>$ <cite>pip install –user pipenv</cite></p>
+</div></blockquote>
+</li>
+<li><p>Run $ <cite>pipenv install –dev</cite></p></li>
+<li><p>Then run the <cite>windows.py</cite> file:</p>
+<blockquote>
+<div><p>$ <cite>pipenv run python windows.py</cite></p>
+</div></blockquote>
+</li>
+</ul>
+<p>TIP: Activate the Pipenv Environment with <cite>pipenv shell</cite> and just run the command <cite>python windows.py</cite>.</p>
 </div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="on-mouse">
+<h3>On mouse:<a class="headerlink" href="#on-mouse" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><p>Graph definition</p></li>
-<li><p>Nodes</p></li>
-<li><p>Types of Graphs</p></li>
+<li><p>Right Click:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adds a single Node.</p></li>
+<li><p>First 2 Nodes Default to START and TARGET node; Yellow and Orange colors correspondingly.</p></li>
+<li><p>After 2 right clicks, it defaults to Wall Nodes.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Left Click:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Removes the selected Node which ever type it corresponds.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="on-press-keyboard">
+<h3>On Press Keyboard:<a class="headerlink" href="#on-press-keyboard" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple" start="3">
+<li><p><cite>C</cite>: Clear Entire Graph.</p></li>
 </ol>
 </div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Verify that you are able to run the Coverage Test.
+e.g. Unix like systems:</p>
+<ul class="simple">
+<li><p>$ <cite>pipenv run pytest</cite></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="repository">
+<h1>Repository<a class="headerlink" href="#repository" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>Feel Free to surf the Repository any time: <a class="reference external" href="https://github.com/alexisraelmtz/algoViewer/">AlgoViewer - Official Repo</a>.</p>
 </div>
 
 
@@ -184,7 +249,7 @@
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="science.html" class="btn btn-neutral float-right" title="Graph Theory" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to An AlgoViewer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to AlgoViewer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

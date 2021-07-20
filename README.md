@@ -47,14 +47,13 @@ It is required that you have in system the following:
 
 ### Installation
 
-Set Up repo and installs first.
+Set Up repo and installs first. e.g. Unix like systems:
 
 - `git clone https://github.com/alexisraelmtz/algoViewer.git`.
-- - Within any venv if not present install `pipenv`: $`pip install --user pipenv`.
+  - Within any venv if not present install `pipenv`: $`pip install --user pipenv`.
 - Run $`pipenv install --dev`
-- Then run the `windows.py` file.
-  e.g. Unix like systems:
-  $ `pipenv run python windows.py`
+- Then run the `windows.py` file:
+  - $ `pipenv run python windows.py`
 
 TIP: Activate the Pipenv Environment with `pipenv shell` and just run the command `python windows.py`.
 
@@ -63,6 +62,7 @@ TIP: Activate the Pipenv Environment with `pipenv shell` and just run the comman
 Run the following command:
 
 - $`git clone https://github.com/alexisraelmtz/algoViewer.git`
+- $`pip install pygame`
 - $`cd algoViewer/algoViewer/`
 - $`python windows.py`
 

@@ -4,14 +4,14 @@ Welcome to AlgoViewer
 by -- Alex Israel Martínez
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
    getting
    science
    
 
 
-Preface
+Overview 
 ____________________________________________
 --------------------------------------------
 
@@ -20,13 +20,12 @@ ____________________________________________
    :align: center
    :scale: 85%
 
-This project corresponds to my personal interests, given the chance to explore and create whatever API I wished. I chose to dive into the realm of two subjects I have a great passion for -
+This project corresponds to my personal preferences in Computer Science, given the chance to explore and create whatever API I wished. I chose to dive into the realm of two subjects I have a great passion for -
 
 - Path Finding Algorithms and,
 - Data Structures
 
-If you are completely new to AlgoViewer, get started now in the :ref:`Quick Start Guide
-<_started>` section.
+If you are completely new to AlgoViewer, get started now in the :ref:`Quick Start Guide<started>` section.
 
 
 Problem
@@ -48,6 +47,10 @@ Featured Algorithms:
 - BFS,
 - A Star,
 - Cownway's Game Of Life
+
+If you are completely new to this concepts, get started now in the :ref:`Graph Theory<intro>` section.
+
+
 
 Repository
 ____________________________________________

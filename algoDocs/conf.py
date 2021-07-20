@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'An AlgoViewer'
+project = 'AlgoViewer'
 copyright = '2021, Alex Martinez C'
 author = 'Alex Martinez C'
 
