@@ -2,7 +2,7 @@
 
 ## Path Finding Algorithm Propagation Visualizer
 
-Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer-path-finding-algorithm-propagation-visualizer.readthedocs.io/en/latest/)
+Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
 
 ---
 
@@ -11,6 +11,8 @@ Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algo
 [![Maintainability](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/maintainability)](https://codeclimate.com/github/alexisraelmtz/algoViewer/maintainability)
 
 ## [![Test Coverage](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/test_coverage)](https://codeclimate.com/github/alexisraelmtz/algoViewer/test_coverage)
+
+#### My Shortvideo
 
 ## Preface
 
@@ -25,6 +27,9 @@ I have been very visual throughout all my life, and writing down simple data str
 
 ## Solution
 
+<div><img src="/algoDocs/resources/A.PNG" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/B.PNG" alt="The good Old Classic Percolation Question -" width="450"/></div>
+
+
 The API is capable of traversing any path-finding algorithm through a graph-like data structure in a visual fashion, with the following -
 
 ### Featured Algorithms
@@ -36,4 +41,9 @@ The API is capable of traversing any path-finding algorithm through a graph-like
 
 ---
 
-Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer-path-finding-algorithm-propagation-visualizer.readthedocs.io/en/latest/)
+Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
+
+---
+
+
+<div><img src="/algoDocs/resources/FIRST.gif" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/SEC.gif" alt="The good Old Classic Percolation Question -" width="450"/></div>
