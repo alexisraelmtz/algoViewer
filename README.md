@@ -2,7 +2,7 @@
 
 ## Path Finding Algorithm Propagation Visualizer
 
-Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer-path-finding-algorithm-propagation-visualizer.readthedocs.io/en/latest/)
+Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
 
 ---
 
@@ -41,7 +41,7 @@ The API is capable of traversing any path-finding algorithm through a graph-like
 
 ---
 
-Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer-path-finding-algorithm-propagation-visualizer.readthedocs.io/en/latest/)
+Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
 
 ---
 
