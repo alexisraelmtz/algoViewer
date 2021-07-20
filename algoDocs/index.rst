@@ -1,6 +1,7 @@
 
 Welcome to AlgoViewer
 ============================================
+by -- Alex Israel Martínez
 
 .. toctree::
    :maxdepth: 4
@@ -13,8 +14,6 @@ Welcome to AlgoViewer
 Preface
 ____________________________________________
 --------------------------------------------
-
-by -- Alex Israel Martínez
 
 .. figure:: ./_templates/resources/5.gif
    :alt: The Good Old Classic Percolation Question
