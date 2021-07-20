@@ -39,18 +39,30 @@ The API is capable of traversing any path-finding algorithm through a graph-like
 ## Getting Started
 
 ### Install Requirements
+It is required that you have in system the following:
+- `python` or `python3`.
+- `pip` or `pip3`.
+
+### Installation
 
 Set Up repo and installs first.
 
-- `git clone https://github.com/alexisraelmtz/algoViewer.git`
-- `pipenv install --dev`
-- Run the `windows.py` file:
-
+- `git clone https://github.com/alexisraelmtz/algoViewer.git`.
+- * Within any venv if not present install `pipenv`: $`pip install --user pipenv`.
+- Run $`pipenv install --dev`
+- Then run the `windows.py` file.
 e.g. Unix like systems:
-
 $ `pipenv run python windows.py`
 
 TIP: Activate the Pipenv Environment with `pipenv shell` and just run the command `python windows.py`.
+
+
+### Windows Users:
+Run the following command:
+- $`git clone https://github.com/alexisraelmtz/algoViewer.git`
+- $`cd algoViewer/algoViewer/`
+- $`python windows.py`
+
 
 ---
 
