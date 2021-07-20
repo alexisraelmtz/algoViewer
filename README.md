@@ -12,6 +12,8 @@ Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algo
 
 ## [![Test Coverage](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/test_coverage)](https://codeclimate.com/github/alexisraelmtz/algoViewer/test_coverage)
 
+#### My Shortvideo
+
 ## Preface
 
 This project corresponds to my personal interests, given the chance to explore and create whatever API I wished. I chose to dive into the realm of two subjects I have a great passion for -
@@ -25,6 +27,9 @@ I have been very visual throughout all my life, and writing down simple data str
 
 ## Solution
 
+<div><img src="/algoDocs/resources/A.PNG" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/B.PNG" alt="The good Old Classic Percolation Question -" width="450"/></div>
+
+
 The API is capable of traversing any path-finding algorithm through a graph-like data structure in a visual fashion, with the following -
 
 ### Featured Algorithms
@@ -37,3 +42,8 @@ The API is capable of traversing any path-finding algorithm through a graph-like
 ---
 
 Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer-path-finding-algorithm-propagation-visualizer.readthedocs.io/en/latest/)
+
+---
+
+
+<div><img src="/algoDocs/resources/FIRST.gif" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/SEC.gif" alt="The good Old Classic Percolation Question -" width="450"/></div>
