@@ -21,7 +21,7 @@ I have been very visual throughout all my life, and writing down simple data str
 
 ## Solution
 
-<div><img src="/algoDocs/resources/THREE.gif" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/5.gif" alt="The good Old Classic Percolation Question -" width="450"/></div>
+<div><img src="/algoDocs/resources/THREE.gif" alt="The good Old Classic Percolation Question -" width="400"/> <img src="/algoDocs/resources/5.gif" alt="The good Old Classic Percolation Question -" width="400"/></div>
 
 
 The API is capable of traversing any path-finding algorithm through a graph-like data structure in a visual fashion, with the following -
