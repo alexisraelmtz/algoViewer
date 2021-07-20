@@ -59,15 +59,15 @@ TIP: Activate the Pipenv Environment with `pipenv shell` and just run the comman
 #### On mouse:
 
 - Right Click:
-  - Adds Node.
-  - First 2 Nodes Default to Starting and Target Node.
+  - Adds a single Node.
+  - First 2 Nodes Default to Starting and Target Node, with Yellow and Orange colors correspondingly.
   - After 2 right clicks, it defaults to Wall Nodes.
 - Left Click:
   - Removes the selected Node which ever type it corresponds.
 
 #### On Press Keyboard:
 
-- `C`: Clear Entire Graph
+- `C`: Clear Entire Graph.
 
 ---
 
