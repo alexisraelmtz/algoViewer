@@ -40,4 +40,4 @@ Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algo
 ---
 
 
-<div><img src="/algoDocs/resources/FIRST.gif" alt="The good Old Classic Percolation Question -" width="450"/><img src="/algoDocs/resources/B.PNG" alt="The good Old Classic Percolation Question -" width="450"/><img src="/algoDocs/resources/A.PNG" alt="The good Old Classic Percolation Question -" width="450"/><img src="/algoDocs/resources/SEC.gif" alt="The good Old Classic Percolation Question -" width="450"/></div>
+<div><img src="/algoDocs/resources/FIRST.gif" alt="The good Old Classic Percolation Question -" width="400"/><img src="/algoDocs/resources/B.PNG" alt="The good Old Classic Percolation Question -" width="400"/><img src="/algoDocs/resources/A.PNG" alt="The good Old Classic Percolation Question -" width="400"/><img src="/algoDocs/resources/SEC.gif" alt="The good Old Classic Percolation Question -" width="400"/></div>
