@@ -8,7 +8,6 @@ Welcome to An AlgoViewer -- by Alex Martinez
    :ref:`science`
 
 
-
 Preface
 ____________________________________________
 --------------------------------------------
