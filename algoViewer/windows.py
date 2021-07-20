@@ -4,7 +4,7 @@ from aStarSearch import aStarSearch as first
 WIDTH = 700
 GRAPH = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption(
-    "AlgoViewer -- Recursive Propagation Algorithms By Alex Israel -- @Enroute")
+    "AlgoViewer -- Path Finding Algorithm Propagation Visualizer By Alex Israel -- @Enroute")
 
 
 START = (255, 255, 0)  # START

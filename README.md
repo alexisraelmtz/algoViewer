@@ -1,12 +1,14 @@
 # An AlgoViewer -- by Alex Martinez
 
 ## Path Finding Algorithm Propagation Visualizer
+
 [![Build Status](https://travis-ci.com/alexisraelmtz/algoViewer.svg?branch=main)](https://travis-ci.com/alexisraelmtz/algoViewer) [![Maintainability](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/maintainability)](https://codeclimate.com/github/alexisraelmtz/algoViewer/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e691cab9705bcfb3b7cf/test_coverage)](https://codeclimate.com/github/alexisraelmtz/algoViewer/test_coverage)
 
 Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
 
 ---
-<img src="/algoDocs/resources/THREE.gif" alt="The good Old Classic Percolation Question -" width="600"/> 
+
+<img src="/algoDocs/resources/THREE.gif" alt="The good Old Classic Percolation Question -" width="600"/>
 
 ## Preface
 
@@ -23,7 +25,6 @@ I have been very visual throughout all my life, and writing down simple data str
 
 <div><img src="/algoDocs/resources/A.PNG" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/B.PNG" alt="The good Old Classic Percolation Question -" width="450"/></div>
 
-
 The API is capable of traversing any path-finding algorithm through a graph-like data structure in a visual fashion, with the following -
 
 ### Featured Algorithms
@@ -35,9 +36,52 @@ The API is capable of traversing any path-finding algorithm through a graph-like
 
 ---
 
-Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
+## Getting Started
+
+### Install Requirements
+
+Set Up repo and installs first.
+
+- `git add clone https://github.com/alexisraelmtz/algoViewer.git`
+- `pipenv install --dev`
+- Run the `windows.py` file:
+
+e.g. Unix like systems:
+
+$ `pipenv run python windows.py`
+
+TIP: Activate the Pipenv Environment with `pipenv shell` and just run the command `python windows.py`.
 
 ---
 
+### Usage
+
+#### On mouse:
+
+- Right Click:
+  - Adds Node.
+  - First 2 Nodes Default to Starting and Target Node.
+  - After 2 right clicks, it defaults to Wall Nodes.
+- Left Click:
+  - Removes the selected Node which ever type it corresponds.
+
+#### On Press Keyboard:
+
+- `C`: Clear Entire Graph
+
+---
+
+### Testing
+
+Verify that you are able to run the Coverage Test.
+e.g. Unix like systems:
+
+- $ `pipenv run pytest`
+
+---
+
+Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
+
+---
 
 <div><img src="/algoDocs/resources/FIRST.gif" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/SEC.gif" alt="The good Old Classic Percolation Question -" width="450"/></div>
