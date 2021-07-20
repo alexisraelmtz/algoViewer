@@ -42,7 +42,7 @@ The API is capable of traversing any path-finding algorithm through a graph-like
 
 Set Up repo and installs first.
 
-- `git add clone https://github.com/alexisraelmtz/algoViewer.git`
+- `git clone https://github.com/alexisraelmtz/algoViewer.git`
 - `pipenv install --dev`
 - Run the `windows.py` file:
 
