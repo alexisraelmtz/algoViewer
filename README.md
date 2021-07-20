@@ -6,7 +6,7 @@
 Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algoviewer.readthedocs.io/en/latest/)
 
 ---
-<img src="/algoDocs/resources/THREE.gif" alt="The good Old Classic Percolation Question -" width="600"/> 
+<img src="/algoDocs/resources/4.gif" alt="The good Old Classic Percolation Question -" width="600"/> 
 
 ## Preface
 
@@ -21,7 +21,7 @@ I have been very visual throughout all my life, and writing down simple data str
 
 ## Solution
 
-<div><img src="/algoDocs/resources/A.PNG" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/B.PNG" alt="The good Old Classic Percolation Question -" width="450"/></div>
+<div><img src="/algoDocs/resources/THREE.gif" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/5.gif" alt="The good Old Classic Percolation Question -" width="450"/></div>
 
 
 The API is capable of traversing any path-finding algorithm through a graph-like data structure in a visual fashion, with the following -
@@ -40,4 +40,4 @@ Feel Free to Read our documentation at: [AlgoViewer - Official Doc](https://algo
 ---
 
 
-<div><img src="/algoDocs/resources/FIRST.gif" alt="The good Old Classic Percolation Question -" width="450"/> <img src="/algoDocs/resources/SEC.gif" alt="The good Old Classic Percolation Question -" width="450"/></div>
+<div><img src="/algoDocs/resources/FIRST.gif" alt="The good Old Classic Percolation Question -" width="450"/><img src="/algoDocs/resources/B.PNG" alt="The good Old Classic Percolation Question -" width="450"/><img src="/algoDocs/resources/A.PNG" alt="The good Old Classic Percolation Question -" width="450"/><img src="/algoDocs/resources/SEC.gif" alt="The good Old Classic Percolation Question -" width="450"/></div>
