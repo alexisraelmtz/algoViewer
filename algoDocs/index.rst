@@ -1,21 +1,33 @@
-Welcome to An AlgoViewer -- by Alex Martinez
+
+Welcome to AlgoViewer
 ============================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-   :ref:`getting`
-   :ref:`science`
+   :maxdepth: 4
+
+   getting
+   science
+   
 
 
 Preface
 ____________________________________________
 --------------------------------------------
 
+by -- Alex Israel Martínez
+
+.. figure:: ./_templates/resources/5.gif
+   :alt: The Good Old Classic Percolation Question
+   :align: center
+   :scale: 85%
+
 This project corresponds to my personal interests, given the chance to explore and create whatever API I wished. I chose to dive into the realm of two subjects I have a great passion for -
 
 - Path Finding Algorithms and,
 - Data Structures
+
+If you are completely new to AlgoViewer, get started now in the :ref:`Quick Start Guide
+<_started>` section.
 
 
 Problem
@@ -29,7 +41,7 @@ Solution
 ____________________________________________
 --------------------------------------------
 
-The API is capable of traversing any path-finding algorithm through a graph-like data structure in a visual fashion, with the following -
+An API capable of traversing any path-finding algorithm through a graph-like data structure in a visual fashion, with the following -
 
 Featured Algorithms:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -42,7 +54,7 @@ Repository
 ____________________________________________
 --------------------------------------------
 
-Feel Free to surf the Repo any time: `AlgoViewer - Official Repo
+Feel Free to surf the Repository any time: `AlgoViewer - Official Repo
 <https://github.com/alexisraelmtz/algoViewer/>`_.
 
 
