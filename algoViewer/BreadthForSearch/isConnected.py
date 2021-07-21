@@ -62,18 +62,6 @@ def breadthForSearch(start, end):
         path = deque([end])
         while path[-1] and path[-1] != start:
             path.append(log[path[-1]])
-        # path.reverse()
-
-       # path = deque()
-       # for node in log[:start:-1]:
-       #     if node != None:
-       #         print(f"This shouldnt be None: {node}")
-       #         path.append(node)
-       #     # else:
-       #     #     print(f"This is None: {node}")
-
-       # path.reverse()
-       # print(path)
 
         if path and path[-1] == start:
             return path
@@ -92,3 +80,16 @@ print(isConnected)
 
 # check = [None]
 # print(None == check[0])
+
+# path.reverse()
+
+# path = deque()
+# for node in log[:start:-1]:
+#     if node != None:
+#         print(f"This shouldnt be None: {node}")
+#         path.append(node)
+#     # else:
+#     #     print(f"This is None: {node}")
+
+# path.reverse()
+# print(path)

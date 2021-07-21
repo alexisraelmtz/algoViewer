@@ -44,7 +44,7 @@ TIP: Activate the Pipenv Environment with `pipenv shell` and just run the comman
 Usage
 ---------------------------------------------
 
-On mouse:
+On mouse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1. Right Click:
   - Adds a single Node.
@@ -54,7 +54,7 @@ On mouse:
 2. Left Click:
   - Removes the selected Node which ever type it corresponds.
 
-On Press Keyboard:
+On Press Keyboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 3. `C`: Clear Entire Graph.
 
