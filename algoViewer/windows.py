@@ -1,5 +1,8 @@
 import pygame
 from aStarSearch import aStarSearch as first
+# from breathForSearch import breathForSearch as second
+# from depthForSearch import depthForSearch as tirdth
+
 
 WIDTH = 700
 GRAPH = pygame.display.set_mode((WIDTH, WIDTH))
