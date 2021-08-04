@@ -1,6 +1,6 @@
 import pygame
 from aStarSearch import aStarSearch as first
-# from breathForSearch import breathForSearch as second
+from BreadthForSearch import isConnected as second
 # from depthForSearch import depthForSearch as tirdth
 
 
@@ -187,7 +187,9 @@ def main(window, width):
                     for row in graph:
                         for node in row:
                             node.updateNeighbours(graph)
-                    first.aStarSearch(lambda: draw(
+                    # first.aStarSearch(lambda: draw(
+                    #     window, graph, ROWS, width), graph, start, end)
+                    second.breadthForSearch(lambda: draw(
                         window, graph, ROWS, width), graph, start, end)
 
                 if event.key == pygame.K_c:
