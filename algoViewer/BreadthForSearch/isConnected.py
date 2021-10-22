@@ -32,10 +32,10 @@ graph = [
     [12, 11],           # 18
 ]
 
-size = len(graph)
 
+def breadthForSearch(draw, graph, start, end):
+    size = len(graph)
 
-def breadthForSearch(start, end):
     def bfs(node):
         q = deque()
         q.append(node)
@@ -64,7 +64,10 @@ def breadthForSearch(start, end):
             path.append(log[path[-1]])
 
         if path and path[-1] == start:
-            return path
+            while current in cameFrom:
+                current = cameFrom[current]
+                current.makePath()
+                draw()
         return False
 
     trace = bfs(start)
@@ -73,23 +76,10 @@ def breadthForSearch(start, end):
     return connection
 
 
-start = 5
-end = 9
-isConnected = breadthForSearch(start, end)
-print(isConnected)
+# start = 5
+# end = 9
+# isConnected = breadthForSearch(start, end)
+# print(isConnected)
 
-# check = [None]
-# print(None == check[0])
-
-# path.reverse()
-
-# path = deque()
-# for node in log[:start:-1]:
-#     if node != None:
-#         print(f"This shouldnt be None: {node}")
-#         path.append(node)
-#     # else:
-#     #     print(f"This is None: {node}")
-
-# path.reverse()
-# print(path)
+# first.aStarSearch(lambda: draw(
+#     window, graph, ROWS, width), graph, start, end)

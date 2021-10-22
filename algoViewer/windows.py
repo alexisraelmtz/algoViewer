@@ -1,5 +1,8 @@
 import pygame
 from aStarSearch import aStarSearch as first
+from BreadthForSearch import isConnected as second
+# from depthForSearch import depthForSearch as tirdth
+
 
 WIDTH = 700
 GRAPH = pygame.display.set_mode((WIDTH, WIDTH))
@@ -184,7 +187,9 @@ def main(window, width):
                     for row in graph:
                         for node in row:
                             node.updateNeighbours(graph)
-                    first.aStarSearch(lambda: draw(
+                    # first.aStarSearch(lambda: draw(
+                    #     window, graph, ROWS, width), graph, start, end)
+                    second.breadthForSearch(lambda: draw(
                         window, graph, ROWS, width), graph, start, end)
 
                 if event.key == pygame.K_c:
