@@ -26,30 +26,49 @@ graph = [
 size = len(graph)
 
 
-def breadthForSearch(node):
-    q = deque()
-    q.append(node)
+def breadthForSearch(start, end):
+    def solve(node):
+        q = deque()
+        q.append(node)
 
-    visited = [False for _ in range(size)]
-    visited[node] = True
+        visited = [False for _ in range(size)]
+        visited[node] = True
 
-    previous = [None for _ in range(size)]
-    while q:
-        node = q.popleft()
-        neighbours = graph[node]
-        for next in neighbours:
-            if not visited[next]:
-                print(
-                    f"Currently at Node {node}: {neighbours}. Visiting {next}")
-                q.append(next)
-                visited[next] = True
-                previous[next] = node
+        previous = [None for _ in range(size)]
+        while q:
+            node = q.popleft()
+            neighbours = graph[node]
+            for next in neighbours:
+                if not visited[next]:
+                    print(
+                        f"Currently at Node {node}: {neighbours}. Visiting {next}")
+                    q.append(next)
+                    visited[next] = True
+                    previous[next] = node
+                elif visited[next]:
+                    print(f"BackTracking Node: {node}")
+        print(previous)
+        return previous
 
-            elif visited[next]:
-                print(f"BackTracking Node: {node}")
-    return previous
+    def buildPath(start, end, reversePath):
+        path = []
+        check = [False for _ in range(size)]
+        for position in reversePath[end:start:-1]:
+            if position != None and not check[position]:
+                path.append(position)
+            else:
+                break
+        path.reverse()
+        if path[0] == start:
+            return path
+        return []
+
+    reversePath = solve(start)
+
+    return buildPath(start, end, reversePath)
 
 
-init = 10
-prev = breadthForSearch(init)
-print(prev)
+init = 0
+end = 9
+path = breadthForSearch(init, end)
+print(path)
