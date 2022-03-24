@@ -9,6 +9,7 @@ coverage.xml
 coverage.html
 ./cc-test-reporter
 /Pycache
+/algoEnv
 
 # Byte-compiled / optimized / DLL files
 .pytest_cache

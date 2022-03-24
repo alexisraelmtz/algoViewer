@@ -187,10 +187,10 @@ def main(window, width):
                     for row in graph:
                         for node in row:
                             node.updateNeighbours(graph)
-                    # first.aStarSearch(lambda: draw(
-                    #     window, graph, ROWS, width), graph, start, end)
-                    second.breadthForSearch(lambda: draw(
+                    first.aStarSearch(lambda: draw(
                         window, graph, ROWS, width), graph, start, end)
+                    # second.breadthForSearch(lambda: draw(
+                    #     window, graph, ROWS, width), graph, start, end)
 
                 if event.key == pygame.K_c:
                     start = None
